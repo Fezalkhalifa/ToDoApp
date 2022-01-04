@@ -15,7 +15,10 @@
         placeholder="New task"
       />
       <span class="input-group-button">
-        <button @click="addTask" class="btn btn-primary">Add</button>
+        <button @click="addTask" class="btn btn-primary">
+          <!-- <font-awesome-icon class="fas-solid fa-plus" /> -->
+          Add
+        </button>
       </span>
     </div>
     <div style="margin-top: 5px" class="tasks__clear btn-group pull-right">
@@ -33,7 +36,9 @@
         class="btn-danger btn-sm"
         @click="$emit('clearAll')"
       >
-        <i key="clearA" class="fa fa-trash"></i> Clear All
+        <font-awesome-icon icon="fa-solid fa-trash" />
+        <font-awesome-icon class="fa-regular fa-trash-can-clock" />
+        Clear All
       </button>
     </div>
     <div class="clear-fix"></div>
